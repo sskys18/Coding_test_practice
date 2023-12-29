@@ -23,7 +23,6 @@ import collections
 a = list(map(int, input().split()))
 count = dict(collections.Counter(a))
 b = max(count, key=count.get)
-print(b)
 if(max(count.values()) == 3): print(10000 + 1000*b)
 elif(max(count.values()) == 2): print(1000 + 100*b)
 else: print(100*max(count.keys()))
